@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Inter } from "@next/font/google";
 import Sidebar from "components/sidebar";
 import Feed from "components/feed";
+import Widgets from "components/Widgets";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +24,7 @@ export default function Home() {
         {/* Feed */}
         <Feed />
         {/* Widgets */}
-
+        <Widgets />
         {/* Modal */}
       </main>
     </div>
