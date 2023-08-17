@@ -1,5 +1,5 @@
 import NextAuth from "next-auth";
-import GoogleProvider from "next-auth/providers/g2oogle";
+import GoogleProvider from "next-auth/providers/google";
 
 export const authOptions = {
   // Configure one or more authentication providers
@@ -10,6 +10,9 @@ export const authOptions = {
     }),
     // ...add more providers here
   ],
+  pages: {
+    signin: "/auth/signin",
+  },
 };
 
 export default NextAuth(authOptions);
