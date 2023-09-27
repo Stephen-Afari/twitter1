@@ -17,7 +17,7 @@ export default function signin({ providers }) {
               alt="twitter logo"
             />
             <p className="text-center text-sm italic my-10">
-              This is a clone App for my Portfolio{" "}
+              This is a clone App for my Portfolio
             </p>
             <button
               onClick={() => signIn(provider.id, { callbackUrl: "/" })}
